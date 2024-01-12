@@ -1,6 +1,6 @@
 # oleg-and-elena-workshop-agency-site
 
-Publicly accessible domain name:
+**Publicly accessible domain name:**<br>
 https://fac30.github.io/agency-site--oleg-elena/
 
 **Core Stories**
