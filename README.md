@@ -15,7 +15,6 @@ As a potential client, I want to:
 - [ ] Hear my screen reader describe the content on your website
 
 **Acceptance Criteria**
-User stories come with acceptance criteria - a detailed scope of a user’s requirements.
 - [ ] Navigation menu
 - [ ] ‘About us’ section
 - [ ] Contact form
