@@ -1,6 +1,4 @@
 body {
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-family: 'Barlow', sans-serif; */
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
@@ -10,61 +8,40 @@ body {
 
 header {
     background-color: #2e7d32;
-    /* Darker green */
     color: #fff;
     text-align: center;
     padding: 2em 0;
 }
 
-/* Navigation Bar Styling */
 nav {
     background-color: #4caf50;
-    /* Green */
     text-align: center;
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
 }
 
 nav a {
     color: #fff;
+    font-size: 1.5rem;
     text-decoration: none;
     margin: 0 20px;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    /* Smooth transition effect */
-
-    /* Additional styling for better readability and aesthetics */
     font-weight: bold;
 }
 
 nav a:hover {
     background-color: #388e3c;
-    /* Darker green on hover */
 }
 
-/* Improved Spacing for Navigation Links on Smaller Screens */
 @media screen and (max-width: 768px) {
     nav a {
         margin: 0 10px;
     }
 }
 
-/* nav {
-    background-color: #388e3c;
-    /* Slightly darker green for navigation bar */
-text-align: center;
-padding: 15px 0;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 20px;
-}
-
-*/ section {
+section {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -73,26 +50,44 @@ nav a {
     color: #333;
 }
 
-h1 {
+h1,
+h2 {
     color: #fff;
 }
 
-h2,
+h1 {
+    font-size: 2.5rem;
+}
+
 h3 {
     color: #115113;
-    /* Dark green for headings */
+    font-size: 25px;
+}
+
+#article-heading {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+article {
+    text-align: center;
+    margin: 0 auto;
+}
+
+article>p {
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    line-height: 1.5em;
 }
 
 .pet-image {
     max-width: 100%;
-    height: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin: 1rem auto;
 }
 
 footer {
     background-color: #2e7d32;
-    /* Darker green for footer */
     color: #fff;
     text-align: center;
     bottom: 0;
@@ -106,7 +101,6 @@ footer {
 
 button {
     background-color: #2e7d32;
-    /* Darker green for buttons */
     color: #fff;
     padding: 10px 15px;
     border: none;
@@ -116,9 +110,4 @@ button {
 
 button:hover {
     background-color: #388e3c;
-    /* Slightly darker green on hover */
-}
-
-#about {
-    margin: 60px;
 }
