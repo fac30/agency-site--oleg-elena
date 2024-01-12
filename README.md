@@ -5,11 +5,11 @@ https://fac30.github.io/agency-site--oleg-elena/
 
 **Core Stories**
 As a potential client, I want to:<br>
-&nbsp;⬜️ See information about each member of your team so that I can know who you are<br>
-&nbsp;⬜️ Browse your website on mobile, tablet, and desktop devices<br>
-&nbsp;⬜️ Click to navigate to different sections of your webpage<br>
-&nbsp;⬜️ Contact you to enquire about working with you<br>
-&nbsp;✅ Visit your website at a publicly accessible domain name
+&nbsp;&nbsp;⬜️ See information about each member of your team so that I can know who you are<br>
+&nbsp;&nbsp;⬜️ Browse your website on mobile, tablet, and desktop devices<br>
+&nbsp;&nbsp;⬜️ Click to navigate to different sections of your webpage<br>
+&nbsp;&nbsp;⬜️ Contact you to enquire about working with you<br>
+&nbsp;&nbsp;✅ Visit your website at a publicly accessible domain name
 
 
 **Additionally, as a visually impaired user, I want to:**
