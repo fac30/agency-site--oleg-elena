@@ -10,7 +10,9 @@ As a potential client, I want to:
 - [ ] Click to navigate to different sections of your webpage<br>
 ⬜️ Contact you to enquire about working with you<br>
 ✅ Visit your website at a publicly accessible domain name
+
 <input type="checkbox" disabled checked />
+
 **Additionally, as a visually impaired user, I want to:**
 - [ ] Navigate your website using keyboard controls
 - [ ] Hear my screen reader describe the content on your website
