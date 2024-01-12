@@ -9,7 +9,7 @@ As a potential client, I want to:
 - [ ] Browse your website on mobile, tablet, and desktop devices<br>
 - [ ] Click to navigate to different sections of your webpage<br>
 ⬜️ Contact you to enquire about working with you<br>
-&nbsp; ✅ Visit your website at a publicly accessible domain name
+✅ Visit your website at a publicly accessible domain name
 
 **Additionally, as a visually impaired user, I want to:**
 - [ ] Navigate your website using keyboard controls
