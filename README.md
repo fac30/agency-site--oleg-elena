@@ -8,8 +8,7 @@ As a potential client, I want to:
 - [ ] See information about each member of your team so that I can know who you are
 - [ ] Browse your website on mobile, tablet, and desktop devices
 - [ ] Click to navigate to different sections of your webpage
-- [ ] Contact you to enquire about working with you<br>
-✅ Visit your website at a publicly accessible domain name
+- [ ] Contact you to enquire about working with you<br>✅ Visit your website at a publicly accessible domain name
 
 **Additionally, as a visually impaired user, I want to:**
 - [ ] Navigate your website using keyboard controls
