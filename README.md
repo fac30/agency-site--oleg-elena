@@ -4,7 +4,7 @@
 https://fac30.github.io/agency-site--oleg-elena/
 
 **Core Stories**
-As a potential client, I want to:
+As a potential client, I want to:<br>
 ⬜️ See information about each member of your team so that I can know who you are<br>
 ⬜️ Browse your website on mobile, tablet, and desktop devices<br>
 ⬜️ Click to navigate to different sections of your webpage<br>
