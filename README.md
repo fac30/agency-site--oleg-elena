@@ -11,7 +11,7 @@ As a potential client, I want to:
 ⬜️ Contact you to enquire about working with you<br>
 ✅ Visit your website at a publicly accessible domain name
 
-<input type="checkbox" disabled checked />
+<input type="checkbox" disabled checked /> works
 
 **Additionally, as a visually impaired user, I want to:**
 - [ ] Navigate your website using keyboard controls
