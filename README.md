@@ -10,7 +10,7 @@ As a potential client, I want to:
 - [ ] Click to navigate to different sections of your webpage
 - [ ] Contact you to enquire about working with you<br>
 
- ✅ Visit your website at a publicly accessible domain name
+&nbsp; ✅ Visit your website at a publicly accessible domain name
 
 **Additionally, as a visually impaired user, I want to:**
 - [ ] Navigate your website using keyboard controls
