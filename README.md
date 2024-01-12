@@ -15,18 +15,19 @@ As a potential client, I want to:<br>
 
 **Additionally, as a visually impaired user, I want to:**
 
-&nbsp;&nbsp;&nbsp;⬜️ Navigate your website using keyboard controls
+&nbsp;&nbsp;&nbsp;⬜️ Navigate your website using keyboard controls<br>
 &nbsp;&nbsp;&nbsp;⬜️ Hear my screen reader describe the content on your website
 
 **Acceptance Criteria**
-- [ ] Navigation menu
-- [ ] ‘About us’ section
-- [ ] Contact form
-- [ ] A user cannot submit a form without filling out all of the mandatory fields (name, company name, email address)
-- [ ] Information from the form doesn’t get submitted until the user clicks a button
+
+&nbsp;&nbsp;&nbsp;⬜️ Navigation menu<br>
+&nbsp;&nbsp;&nbsp;⬜️ ‘About us’ section<br>
+&nbsp;&nbsp;&nbsp;⬜️ Contact form<br>
+&nbsp;&nbsp;&nbsp;⬜️ A user cannot submit a form without filling out all of the mandatory fields (name, company name, email address)<br>
+&nbsp;&nbsp;&nbsp;⬜️ Information from the form doesn’t get submitted until the user clicks a button<br>
 
 **Stretch Goal**
-- [ ] Use the automatic trigger functionality of your GitHub project board.
+- [ ] Use the automatic trigger functionality of your GitHub project board<br>
 
 
 https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
