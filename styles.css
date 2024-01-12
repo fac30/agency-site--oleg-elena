@@ -118,3 +118,7 @@ button:hover {
     background-color: #388e3c;
     /* Slightly darker green on hover */
 }
+
+#about {
+    margin: 60px;
+}
