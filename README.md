@@ -13,8 +13,9 @@ As a potential client, I want to:<br><br>
 
 
 **Additionally, as a visually impaired user, I want to:**
-- [ ] Navigate your website using keyboard controls
-- [ ] Hear my screen reader describe the content on your website
+
+&nbsp;&nbsp;&nbsp;⬜️ Navigate your website using keyboard controls
+&nbsp;&nbsp;&nbsp;⬜️ Hear my screen reader describe the content on your website
 
 **Acceptance Criteria**
 - [ ] Navigation menu
