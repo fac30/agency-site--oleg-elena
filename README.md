@@ -27,7 +27,7 @@ As a potential client, I want to:<br>
 &nbsp;&nbsp;&nbsp;⬜️ Information from the form doesn’t get submitted until the user clicks a button<br>
 
 **Stretch Goal**
-- [ ] Use the automatic trigger functionality of your GitHub project board<br>
+&nbsp;&nbsp;&nbsp;⬜️ Use the automatic trigger functionality of your GitHub project board<br>
 
 
 https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
