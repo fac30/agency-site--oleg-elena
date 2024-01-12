@@ -24,7 +24,7 @@ As a potential client, I want to:<br>
 
 &nbsp;&nbsp;&nbsp;✅ Navigation menu<br>
 &nbsp;&nbsp;&nbsp;⬜️ ‘About us’ section<br>
-&nbsp;&nbsp;&nbsp;⬜️ Contact form<br>
+&nbsp;&nbsp;&nbsp;✅ Contact form<br>
 &nbsp;&nbsp;&nbsp;⬜️ A user cannot submit a form without filling out all of the mandatory fields (name, company name, email address)<br>
 &nbsp;&nbsp;&nbsp;⬜️ Information from the form doesn’t get submitted until the user clicks a button<br>
 
