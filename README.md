@@ -1,6 +1,7 @@
 # oleg-and-elena-workshop-agency-site
 
-https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
+Publicly accessible domain name:
+https://fac30.github.io/agency-site--oleg-elena/
 
 **Core Stories**
 As a potential client, I want to:
@@ -23,3 +24,6 @@ As a potential client, I want to:
 
 **Stretch Goal**
 - [ ] Use the automatic trigger functionality of your GitHub project board.
+
+
+https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
