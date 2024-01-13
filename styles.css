@@ -36,6 +36,18 @@ nav a:hover {
 }
 
 @media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
     nav a {
         margin: 0 10px;
     }
@@ -95,9 +107,32 @@ footer {
     padding: 1rem;
 }
 
+footer>p {
+    font-size: 1rem;
+}
+
 .social-icons a {
     margin: 0 10px;
+    font-size: 1.5rem;
+    padding: 1rem;
+
 }
+
+.social-icons .fa-facebook:hover {
+    color: white;
+    transition: all 0.2s;
+}
+
+.social-icons .fa-x-twitter:hover {
+    color: white;
+    transition: all 0.2s;
+}
+
+.social-icons .fa-instagram:hover {
+    color: white;
+    transition: all 0.2s;
+}
+
 
 button {
     background-color: #2e7d32;
