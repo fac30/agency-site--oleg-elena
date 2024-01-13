@@ -1,6 +1,6 @@
 # PetShopOne-agency-site
 
-**Publicly accessible domain name:**<br>
+**Publicly accessible domain names:**<br>
 **https://fac30.github.io/agency-site--oleg-elena/**
 
 **http://www.pettherapyone.co.uk/**
