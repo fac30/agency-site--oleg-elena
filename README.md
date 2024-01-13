@@ -5,7 +5,7 @@
 
 **http://www.pettherapyone.co.uk/**
 
-**Core Stories**
+**Core Stories**<br>
 As a potential client, I want to:<br>
 
 &nbsp;&nbsp;&nbsp;⬜️ See information about each member of your team so that I can know who you are<br>
