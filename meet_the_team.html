@@ -4,113 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact PetTherapyOne</title>
-
-
-    <!-- Styles -->
-    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
-    <!-- Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
-
-    <style>
-        body {
-            background-color: #000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        
-        .swiper {
-            padding-bottom: 60px !important;
-            height: 250px;
-            .swiper-wrapper {
-            align-items: center;
-            }
-            .swiper-slide {
-            border-radius: 5px;
-            height: 180px !important;
-            background-color: #000;
-            border: 1px solid #fff;
-            transition: 0.2s;
-            &.active {
-                height: 230px !important;
-            }
-            }
-            .prev,
-            .next {
-                cursor: pointer;
-                z-index: 100;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                opacity: 0.65;
-                transition: 0.2s;
-                &:hover {
-                opacity: 1;
-                }
-                svg {
-                    width: 20px;
-                    height: 20px;
-                }
-                svg path {
-                    fill: #fff;
-                }
-            }
-            .prev {
-                left: 25px;
-            }
-            .next {
-                right: 25px;
-            }
-            .pagination {
-                margin-left: 8px !important;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-top: 40px;
-                z-index: 100;
-                span {
-                    font-size: 0;
-                    opacity: 1;
-                    margin: 0px 6px !important;
-                    border: 1px solid #fff;
-                    &.swiper-pagination-bullet-active {
-                    background-color: transparent;
-                    transform: scale(1.5);
-                    }
-                }
-            }
-        }
-    </style>  
+    <title>Meet the team</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+        rel="stylesheet" />
+    <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="./scripts.js"></script>
 </head>
 
-<div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
-    </div>
-  
-    <div class="pagination"></div>
-  
-    <div class="prev">
-      <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M9.2625 13.2375L3.5375 7.5L9.2625 1.7625L7.5 0L0 7.5L7.5 15L9.2625 13.2375Z" fill="#A99260" />
-      </svg>
-  
-    </div>
-    <div class="next">
-      <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0.737305 13.2375L6.4623 7.5L0.737305 1.7625L2.4998 0L9.9998 7.5L2.4998 15L0.737305 13.2375Z" fill="#A99260" />
-      </svg>
-  
-    </div>
-</div>
+<body class="margin">
 
+    <header role="banner">
+        <h1>Welcome to PetTherapyOne!</h1>
+        <h2>🐾 Bringing Joy Through the Magic of Pets 🌈</h2>
+    </header>
+
+    <nav role="navigation">
+        <a href="./index.html" aria-label="Home">Home</a>
+        <a href="./about_us.html" aria-label="About Us">About Us</a>
+        <a href="./meet_the_team.html" aria-label="Meet the Team">Meet the Team</a>
+        <a href="./contacts.html" aria-label="Contacts">Contacts</a>
+    </nav>
+
+    <section id="about" role="region" aria-labelledby="article-heading">
+        <h3 id="article-heading">🌟 Discover the Magic of PetTherapyOne!</h3>
+        <article>
+            <p>At PetTherapyOne, we're on a mission to provide comfort, joy, and healing to children facing a variety of
+                challenges. Walk alongside our furry therapists as they turn challenges into smiles, one paw at a
+                time!"🐾
+            </p>
+        </article>
+        <h3 id="key-points">Key points</h3>
+            <article>
+                <ul>
+                    <li>Emotional support animals provide comfort and stress relief to people suffering from mental health issues.</li>
+                    <li>Dogs are the most common type of emotional support animal because they are good at gauging human emotion and take well to special training.</li>
+                    <li>Many other types of animals also make great emotional support partners–especially for people who are allergic to or afraid of dogs.</li>
+                    <li>An emotional support or therapy animal is not quite the same thing as a service animal, which provides physical help to its owner.</li>
+                </ul>
+        </article>
+        <article>
+            <p>For people suffering from mental health issues, emotional support animals are a great way to provide treatment and coping mechanisms. Sometimes this emotional support is necessary just to help people function normally, especially for anxiety, depression, and for learning disabilities. An emotional support or therapy animal is not quite the same thing as a service animal, which provides physical help to its owner. A therapy animal provides emotional support only.</p>
+        </article>
+        <article>
+            <p>You don’t necessarily need to own a pet or a domesticated animal in order to get some emotional benefit from an animal. We allow you to meet and play with animals at our site. We also make regular visits to hospitals, schools, and nursing homes to help children, the elderly, or sick people cope with difficult circumstances.</p> 
+        </article>
+
+
+
+    <footer role="contentinfo">
+        <p>🌈 &copy; 2024 PetTherapyOne. Healing Hearts, One Paw at a Time. 🐾</p>
+        <div class="social-icons" aria-label="Social Media Links">
+            <a href="#" aria-label="Visit our Facebook page">Facebook</a>
+            <a href="#" aria-label="Follow us on Twitter">Twitter</a>
+            <a href="#" aria-label="Check out our Instagram">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        // Placeholder for JavaScript functionality
+    </script>
+
+</body>
+
+</html>
