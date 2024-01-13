@@ -5,15 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to PetTherapyOne</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
-        rel="stylesheet" />
-    <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script defer src="./scripts.js"></script>
+    <style>
+        body {
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        }
+
+        .swiper {
+        padding-bottom: 60px !important;
+        height: 250px;
+        .swiper-wrapper {
+            align-items: center;
+        }
+        .swiper-slide {
+            border-radius: 5px;
+            height: 180px !important;
+            background-color: #000;
+            border: 1px solid #fff;
+            transition: 0.2s;
+            &.active {
+            height: 230px !important;
+            }
+        }
+        .prev,
+        .next {
+            cursor: pointer;
+            z-index: 100;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.65;
+            transition: 0.2s;
+            &:hover {
+            opacity: 1;
+            }
+            svg {
+            width: 20px;
+            height: 20px;
+            }
+            svg path {
+            fill: #fff;
+            }
+        }
+        .prev {
+            left: 25px;
+        }
+        .next {
+            right: 25px;
+        }
+        .pagination {
+            margin-left: 8px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            z-index: 100;
+            span {
+            font-size: 0;
+            opacity: 1;
+            margin: 0px 6px !important;
+            border: 1px solid #fff;
+            &.swiper-pagination-bullet-active {
+                background-color: transparent;
+                transform: scale(1.5);
+            }
+            }
+        }
+    }
+    </style>
 </head>
 
 <body class="margin">
