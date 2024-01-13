@@ -113,24 +113,3 @@ button:hover {
 }
 
 
-img {
-    display: block;
-    max-width: 100%;
-  }
-  
-  .wrapper {
-    overflow: hidden;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-gap: 10px;
-  }
-  
-  .gallery {
-    overflow: scroll;
-  }
-  
-  .lil-nav {
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
