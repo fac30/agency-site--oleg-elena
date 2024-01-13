@@ -22,7 +22,6 @@ As a visually impaired user, I want to:
 &nbsp;&nbsp;&nbsp;⬜️ Hear my screen reader describe the content on your website
 
 **Acceptance Criteria**
-
 &nbsp;&nbsp;&nbsp;✅ Navigation menu<br>
 &nbsp;&nbsp;&nbsp;⬜️ ‘About us’ section<br>
 &nbsp;&nbsp;&nbsp;✅ Contact form<br>
