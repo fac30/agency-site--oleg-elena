@@ -15,7 +15,8 @@ As a potential client, I want to:<br>
 &nbsp;&nbsp;&nbsp;✅ Visit your website at a publicly accessible domain name
 
 
-**Additionally, as a visually impaired user, I want to:**
+**Additionally,**<br>
+As a visually impaired user, I want to:
 
 &nbsp;&nbsp;&nbsp;⬜️ Navigate your website using keyboard controls<br>
 &nbsp;&nbsp;&nbsp;⬜️ Hear my screen reader describe the content on your website
