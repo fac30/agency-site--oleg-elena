@@ -31,20 +31,21 @@ nav a {
     font-weight: bold;
 }
 
+nav a:hover {
+    background-color: #388e3c;
+}
+
 ul {
     list-style-type: none; /* Remove default list styling */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
     display: flex; /* Use flexbox to make the list items appear horizontally */
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 li {
     margin-right: 20px; /* Add spacing between list items */
-}
-
-nav a:hover {
-    background-color: #388e3c;
 }
 
 @media screen and (max-width: 768px) {
