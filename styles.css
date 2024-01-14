@@ -41,6 +41,7 @@ ul {
     padding: 0; /* Remove default padding */
     display: flex; /* Use flexbox to make the list items appear horizontally */
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 li {
