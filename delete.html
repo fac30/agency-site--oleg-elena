@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to PetTherapyOne</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" 
+        rel="stylesheet" />
+    <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="./scripts.js"></script>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .grid-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+            gap: 1rem;
+            grid-auto-rows: 13rem;
+            padding: 2rem;
+            background-image: url(./images/grass.jpg);
+            border-radius: 0.25rem;
+            box-shadow: 0 0 0 3px rgb(18, 59, 2);
+        }
+
+        .grid-item-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px ridge black;
+            border-radius: 9999px;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+        }
+
+        .grid-item-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            padding: 0.5rem;
+            font-size: 1.25rem;
+            line-height: 1.25rem;
+            width: 150px;
+            height: 40px;
+            border-radius: 0.25rem;
+            margin-top: -40px;
+            box-shadow: 5px 5px 0 0 rgb(36, 80, 18);
+        }
+    </style>
+</head>
+
+<body class="margin">
+
+    <header role="banner">
+        <h1>Welcome to PetTherapyOne!</h1>
+        <h2>🐾 Bringing Joy Through the Magic of Pets 🌈</h2>
+    </header>
+
+    <nav role="navigation" aria-label="Main Navigation">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about_us.html">About Us</a></li>
+            <li><a href="./meet_the_team.html">Meet the Team</a></li>
+            <li><a href="./contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" role="region" aria-labelledby="article-heading">
+        <h2 id="article-heading">🌟 Discover the Magic of PetTherapyOne!</h2>
+        <article>
+            <p>At PetTherapyOne, we're on a mission to provide comfort, joy, and healing to children facing a variety of challenges. Walk alongside our furry therapists as they turn challenges into smiles, one paw at a time! 🐾
+            </p>
+        </article>
+
+        <section id="services" role="region" aria-labelledby="services-heading">
+            <h2 id="services-heading">Best Emotional Support Animals</h2>
+            <div class="grid-items" aria-label="Emotional Support Animals">
+                <div style="display: flex; flex-direction: column; align-items: center; position: relative;">
+                    <img src="./images/dog.jpg" alt="A happy white dog in grass" class="grid-item-image">
+                    <div class="grid-item-text">1. Dogs</div>
+                </div>
+
+                <div style="position:relative;display:flex;flex-direction:column;align-items:center;">
+                    <img src="./images/cat.jpg" alt="A blue-eyed cat looking up" class="grid-item-image">
+                    <div class="grid-item-text">2. Cats</div>
+                </div>
+
+                <div style="position:relative;display:flex;flex-direction:column;align-items:center;">
+                    <img src="./images/rabbit.jpg" alt="A rabbit next to yellow flowers" class="grid-item-image">
+                    <div class="grid-item-text">3. Rabbits</div>
+                </div>
+
+                <div style="position:relative;display:flex;flex-direction:column;align-items:center;">
+                    <img src="./images/Guinea-Pig.jpg" alt="A guinea pig on grass" class="grid-item-image">
+                    <div class="grid-item-text">4. Guinea Pigs</div>
+                </div>
+
+                <div style="position:relative;display:flex;flex-direction:column;align-items:center;">
+                    <img src="./images/Miniature-Horse.jpg" alt="A miniature horse running" class="grid-item-image">
+                    <div class="grid-item-text" style="font-size: 1rem">5. Miniature Horses And Ponies</div>
+                </div>
+
+                <div style="position:relative;display:flex;flex-direction:column;align-items:center;">
+                    <img src="./images/Parrot.jpg" alt="A grey parrot" class="grid-item-image">
+                    <div class="grid-item-text">6. Parrots</div>
+                </div>
+
+                <div style="position:relative;display:flex;flex-direction:column;align-items:center;">
+                    <img src="./images/pig.jpg" alt="A pig and a miniature pig" class="grid-item-image">
+                    <div class="grid-item-text" style="font-size: 1rem">7. Miniature Pigs</div>
+                </div>
+
+                <div style="position:relative;display:flex;flex-direction:column;align-items:center;">
+                    <img src="./images/chicken.jpg" alt="A chicken on grass" class="grid-item-image">
+                    <div class="grid-item-text">8. Chickens</div>
+                </div>
+
+                <div style="position:relative;display:flex;flex-direction:column;align-items:center;">
+                    <img src="./images/goat.jpg" alt="A sheep and a goat together" class="grid-item-image">
+                    <div class="grid-item-text" style="font-size: 1rem">9. Sheep And Goats</div>
+                </div>
+
+                <div style="position:relative;display:flex;flex-direction:column;align-items:center;">
+                    <img src="./images/alpalca-5.jpg" alt="A llama and alpacas" class="grid-item-image">
+                    <div class="grid-item-text" style="font-size: 1rem">10. Llama And Alpacas</div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <footer role="contentinfo">
+        <p>🌈 &copy; 2024 PetTherapyOne. Healing Hearts, One Paw at a Time. 🐾</p>
+        <div class="social-icons" aria-label="Social Media Links">
+            <a href="#" aria-label="Visit our Facebook page">Facebook</a>
+            <a href="#" aria-label="Follow us on Twitter">Twitter</a>
+            <a href="#" aria-label="Check out our Instagram">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        // Your script here
+    </script>
+
+</body>
+
+</html>
