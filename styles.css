@@ -42,23 +42,24 @@ nav a:hover {
 
 ul {
     list-style-type: none;
-    /* Remove default list styling */
     margin: 0;
-    /* Remove default margin */
     padding: 0;
-    /* Remove default padding */
     display: flex;
-    /* Use flexbox to make the list items appear horizontally */
     justify-content: center;
     flex-wrap: wrap;
 }
 
 li {
     margin-right: 20px;
-    /* Add spacing between list items */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1201px) {
+    .key-points-box {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
     nav {
         display: flex;
         flex-wrap: wrap;
@@ -68,11 +69,31 @@ li {
     nav a {
         margin: 0 10px;
     }
+
+    #additional-section {
+        flex-direction: column;
+    }
+
+    .key-points-box {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .grid-items {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
     nav a {
         margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .key-points-box {
+        padding: 15px;
+        font-size: 14px;
     }
 }
 
@@ -126,7 +147,6 @@ article>p {
     /* Increase the size by 10% on hover */
 }
 
-
 footer>p {
     font-size: 1rem;
 }
@@ -135,7 +155,6 @@ footer>p {
     margin: 0 10px;
     font-size: 1.5rem;
     padding: 1rem;
-
 }
 
 .social-icons .fa-facebook:hover {
@@ -152,7 +171,6 @@ footer>p {
     color: white;
     transition: all 0.2s;
 }
-
 
 button {
     background-color: #2e7d32;
@@ -191,7 +209,6 @@ footer {
     line-height: 1.6;
     margin-bottom: 10px;
     vertical-align: middle;
-
 }
 
 #additional-section {
@@ -222,8 +239,6 @@ footer {
     line-height: 1.6;
     color: #555;
 }
-
-/* Media Queries */
 
 @media screen and (max-width: 1200px) {
     .key-points-box {
@@ -258,7 +273,7 @@ footer {
     grid-auto-rows: 13rem;
     padding: 2rem;
     background-image: url(./images/grass.jpg);
-    border-radius: 00.25rem;
+    border-radius: 0.25rem;
     box-shadow: 0 0 0 3px rgb(18, 59, 2);
 }
 
@@ -380,8 +395,8 @@ footer {
     margin-top: 5px;
 }
 
-
 /* CONTACTS styles : */
+
 #contact article {
     max-width: 700px;
     margin: 0 auto 20px;
