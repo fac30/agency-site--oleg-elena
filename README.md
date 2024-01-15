@@ -56,5 +56,7 @@ Workshop for week 1: Website agency created by Oleg and Elena
 
 1. The chosen topic is a Pet Therapy Agency, with the chosen name petTherapyOne
 2. So far, we've created 4 pages : home page, about us, meet the team and contacts. With our pet therapy agency, we want to tailor therapy programs, and extend the benefits of pet therapy to as many people as possible, children most of all. We want to build a website accessible to all readers, for reaching out everyone.
+3. Applying HTML semantics and accessibility, CSS grid and flex, media query, some Javascript scripts.
+4. Automated the deployment to the domain name pettherapyone.co.uk.
 
 ---
