@@ -46,7 +46,7 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
 ## Objectives
 
 1. **Select a Compelling Topic:** Choose a captivating theme for the agency website.
-2. **Craft a Comprehensive Website:** Develop a well-rounded agency website with a focus on excellence.
+2. **Craft a Comprehensive Website:** Develop a well-rounded agency website.
 3. **Apply Knowledge:** Put into practice the skills acquired during the learning process.
 4. **Incorporate Extra Features:** Enhance the project with additional elements, such as automatic deployment to a public domain.
 
