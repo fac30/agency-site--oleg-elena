@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f0f0f0;
     color: #333;
+    position: relative;
 }
 
 header {
@@ -175,6 +176,7 @@ footer {
     padding: 1rem;
 }
 
+
 /* ABOUT US styles: */
 
 #key-points {
@@ -192,6 +194,60 @@ footer {
 
 }
 
+#additional-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.key-points-box {
+    width: 48%;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.key-points-box h3 {
+    color: #115113;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.key-points-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+    .key-points-box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #additional-section {
+        flex-direction: column;
+    }
+
+    .key-points-box {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .key-points-box {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
 
 /* MEET THE TEAM styles: */
 
