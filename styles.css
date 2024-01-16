@@ -106,10 +106,10 @@ main {
     color: #333;
 }
 
-h1,
+/* h1,
 h2 {
     color: #fff;
-}
+} */
 
 h1 {
     font-size: 2.5rem;
@@ -123,6 +123,7 @@ h3 {
 .article-heading {
     text-align: center;
     margin-top: 2rem;
+    color: #115113;
 }
 
 article {
