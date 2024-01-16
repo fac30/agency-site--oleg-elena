@@ -401,6 +401,7 @@ footer {
     max-width: 700px;
     margin: 0 auto 20px;
     text-align: center;
+    position: relative;
 }
 
 #contact-form {
@@ -420,6 +421,7 @@ footer {
     padding: 8px;
     margin-bottom: 10px;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 #contact-form button {
@@ -446,4 +448,19 @@ button {
 
 button:hover {
     background-color: #388e3c;
+}
+
+.success-message {
+    display: none;
+    background-color: #388e3c;
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
