@@ -19,7 +19,7 @@ As a potential client, I want to:<br>
 **Additionally,**<br>
 As a visually impaired user, I want to:
 
-&nbsp;&nbsp;&nbsp;⬜️ Navigate your website using keyboard controls<br>  [to be tested] <br>
+&nbsp;&nbsp;&nbsp;⬜️ Navigate your website using keyboard controls [to be tested] <br>
 &nbsp;&nbsp;&nbsp;⬜️ Hear my screen reader describe the content on your website
 
 **Acceptance Criteria**<br>
