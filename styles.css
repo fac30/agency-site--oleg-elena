@@ -392,6 +392,11 @@ footer {
     margin-top: 5px;
 }
 
+
+.details h2 a {
+    text-decoration: none;
+}
+
 /* CONTACTS styles : */
 
 #contact article {
@@ -457,4 +462,34 @@ button:hover {
     margin-left: 140px;
     border: none;
     max-width: 50%;
+}
+
+/* overlay card titles */
+
+.card {
+    position: relative;
+}
+
+.imgBx::before {
+    content: attr(data-title);
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: #115113;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: normal;
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+
+}
+
+.imgBx:hover::before {
+    opacity: 1;
 }
