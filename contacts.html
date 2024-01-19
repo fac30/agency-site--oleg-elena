@@ -35,7 +35,7 @@
             <p>For any questions, inquiries, or if you're looking to explore collaboration possibilities, feel free to
                 get in touch with us using the form provided.</p>
         </article>
-        <form action="/submit-contact" method="post" id="contact-form">
+        <form method="post" id="contact-form">
             <label for="name">👶 Your Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -48,7 +48,7 @@
             <button type="submit">Send Message</button>
         </form>
         <div id="success-message" class="success-message" aria-live="polite"></div>
-        <!-- aria-live="polite" used to ensure that important updates, like here the success message, are communicated to users relying on screen readers in a timely and non-disruptive manner. -->
+        <!-- aria-live="polite" used to ensure that important updates( here the success message) are communicated to user relying on screen reader in a timely and non-disruptive manner. -->
     </main>
 
     <footer role="contentinfo">
@@ -59,31 +59,13 @@
             <a href="#" aria-label="Check out our Instagram" title="Instagram"><i class="fa fa-instagram"></i></a>
         </div>
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const contactForm = document.getElementById("contact-form");
-            const successMessage = document.getElementById("success-message");
-
-            contactForm.addEventListener("submit", function (event) {
-                event.preventDefault();
-
-                successMessage.textContent = "Message sent! We'll be in touch soon. Thank you!";
-                successMessage.style.display = "block";
-
-                // Hide the success message after 3 seconds
-                setTimeout(function () {
-                    successMessage.style.display = "none";
-                }, 3000);
-            });
-        });
-    </script>
 
     <script src="https://kit.fontawesome.com/4562b23ee3.js" crossorigin="anonymous"></script>
+    <script src="https://site-assets.fontawesome.com/releases/v6.1.0/css/all.css"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script defer src="./scripts.js"></script>
+    <script defer src="./script.js"></script>
 </body>
 
 </html>
