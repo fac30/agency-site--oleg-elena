@@ -194,18 +194,35 @@ footer {
 
 /* ABOUT US styles: */
 
-#key-points {
+ul#key-points {
     list-style-type: none;
+    margin: 0;
     padding-left: 20px;
     display: flex;
     justify-content: start;
 }
 
-#key-points li {
+ul#key-points li {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 10px;
     vertical-align: middle;
+}
+
+ul#key-points li a {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    padding: 5px;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    margin-right: 10px;
+    /* Adjust spacing between links */
+    transition: background-color 0.3s ease;
+}
+
+ul#key-points li a:hover {
+    background-color: #f0f0f0;
 }
 
 #additional-section {
@@ -225,10 +242,15 @@ footer {
     box-sizing: border-box;
 }
 
-.key-points-box h3 {
+.key-points-box h3>a {
+    text-decoration: none;
     color: #115113;
     font-size: 20px;
     margin-bottom: 10px;
+}
+
+.key-points-box h3>a:hover {
+    background-color: #f0f0f0;
 }
 
 .key-points-box p {
@@ -260,6 +282,7 @@ footer {
         font-size: 14px;
     }
 }
+
 
 /* MEET THE TEAM styles: */
 
