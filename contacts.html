@@ -2,72 +2,256 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Contact PetTherapyOne</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
-        rel="stylesheet" />
-    <meta name="description"
-        content="Contact Pet TherapyOne for inquiries, partnerships, or to schedule therapy sessions with our trained animals. We're here to help and make a positive impact.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet the team</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+    rel="stylesheet" />
+
 </head>
+
+<style>
+  .box {
+    
+    max-width: 1086px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 1rem;
+    margin: 50px auto;
+    justify-content: space-between;
+  }
+
+  .card {
+    position: relative;
+    width: 306px;
+    height: 346px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+  }
+
+  .card:before,
+  .card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: #fff;
+    transition: 0.5s;
+    z-index: -1;
+  }
+
+  .card:hover:before {
+    transform: rotate(20deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+  }
+
+  .card:hover:after {
+    transform: rotate(10deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+  }
+
+  .card .imgBx {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #222;
+    transition: 0.5s;
+    z-index: 1;
+  }
+
+  .card:hover .imgBx {
+    bottom: 80px;
+  }
+
+  .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card .details {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+  }
+
+  .card .details h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #777;
+    text-transform: uppercase;
+  }
+
+  .card .details h2 span {
+    font-weight: 500;
+    font-size: 16px;
+    color: #f38695;
+    display: block;
+    margin-top: 5px;
+  }
+</style>
 
 <body class="margin">
 
-    <header role="banner" class="background-img">
-        <h1>PetTherapyOne - Contacts</h1>
-        <h2>🌈Let's Connect and Make a Difference Together🐾</h2>
-    </header>
+  <header role="banner">
+    <h1>Welcome to PetTherapyOne!</h1>
+    <h2>🐾 Bringing Joy Through the Magic of Pets 🌈</h2>
+  </header>
 
-    <nav role="navigation" aria-label="Main Navigation">
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about_us.html">About Us</a></li>
-            <li><a href="./meet_the_team.html">Meet the Team</a></li>
-            <li><a href="./contacts.html">Contacts</a></li>
-        </ul>
-    </nav>
+  <nav role="navigation">
+    <a href="./index.html" aria-label="Home">Home</a>
+    <a href="./about_us.html" aria-label="About Us">About Us</a>
+    <a href="./meet_the_team.html" aria-label="Meet the Team">Meet the Team</a>
+    <a href="./contacts.html" aria-label="Contacts">Contacts</a>
+  </nav>
 
-    <main id="contact" role="region" aria-labelledby="article-heading">
-        <h2 id="article-heading" class="article-heading">🌟Get in Touch</h2>
-        <article>
-            <p>For any questions, inquiries, or if you're looking to explore collaboration possibilities, feel free to
-                get in touch with us using the form provided.</p>
-        </article>
-        <form method="post" id="contact-form">
-            <label for="name">👶 Your Name:</label>
-            <input type="text" id="name" name="name" required>
+  <main id="about" role="region" aria-labelledby="article-heading">
+    <h3 class="article-heading">🌟 Meet the team!</h3>
+    <article>
+      <p>At PetTherapyOne, we're on a mission to provide comfort, joy, and healing to children facing a variety of
+        challenges. Walk alongside our furry therapists as they turn challenges into smiles, one paw at a
+        time!"🐾
+      </p>
+    </article>
+  </main>
+  <section class="box">
+    <div class="card">
+      <div class="imgBx">
+        <img src="./images/dog.jpg" alt="images">
+      </div>
+      <div class="details">
+        <h2>SomeOne Famous<br><span>Director</span></h2>
+      </div>
+    </div>
 
-            <label for="email">📧 Your Email:</label>
-            <input type="email" id="email" name="email" required>
+    <div class="card">
+      <div class="imgBx">
+        <img src="./images/Syrian-Hamster-close-up-1024x535.jpg" alt="images">
+      </div>
+      <div class="details">
+        <h2>SomeOne Tiny<br><span>Producer</span></h2>
+      </div>
+    </div>
 
-            <label for="message">✨ Your Message:</label>
-            <textarea id="message" name="message" required></textarea>
+    <div class="card">
+      <div class="imgBx">
+        <img src="./images/goat.jpg" alt="images">
+      </div>
+      <div class="details">
+        <h2>SomeOne Horny<br><span>Actor</span></h2>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgBx">
+        <img src="./images/chicken.jpg" alt="images">
+      </div>
+      <div class="details">
+        <h2>SomeOne Chicky<br><span>Designer</span></h2>
+      </div>
+    </div>
 
-            <button type="submit">Send Message</button>
-        </form>
-        <div id="success-message" class="success-message" aria-live="polite"></div>
-        <!-- aria-live="polite" used to ensure that important updates( here the success message) are communicated to user relying on screen reader in a timely and non-disruptive manner. -->
-    </main>
+    <div class="card">
+      <div class="imgBx">
+        <img src="./images/alpalca-5.jpg" alt="images">
+      </div>
+      <div class="details">
+        <h2>SomeOne Thin<br><span>Analyst</span></h2>
+      </div>
+    </div>
 
-    <footer role="contentinfo">
-        <p>🌈 &copy; 2024 PetTherapyOne. Healing Hearts, One Paw at a Time. 🐾</p>
-        <div class="social-icons" aria-label="Social Media Links">
-            <a href="#" aria-label="Visit our Facebook page" title="Facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" aria-label="Follow us on X-Twitter" title="X-Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" aria-label="Check out our Instagram" title="Instagram"><i class="fa fa-instagram"></i></a>
-        </div>
-    </footer>
+    <div class="card">
+      <div class="imgBx">
+        <img src="./images/rabbit.jpg" alt="images">
+      </div>
+      <div class="details">
+        <h2>SomeOne Eary<br><span>Office manager</span></h2>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgBx">
+        <img src="./images/sheep.jpg" alt="images">
+      </div>
+      <div class="details">
+        <h2>SomeOne Stubborn<br><span>HR manager</span></h2>
+      </div>
+    </div>
 
-    <script src="https://kit.fontawesome.com/4562b23ee3.js" crossorigin="anonymous"></script>
-    <script src="https://site-assets.fontawesome.com/releases/v6.1.0/css/all.css"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script defer src="./script.js"></script>
+    <div class="card">
+      <div class="imgBx">
+        <img src="./images/Emotional-Support-Animals-Chicken-1024x535.jpg" alt="images">
+      </div>
+      <div class="details">
+        <h2>SomeOne Famous<br><span>Producer</span></h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="./images/pair-of-macaws-perching-on-a-branch-picture-id507497912.jpg" alt="images">
+      </div>
+      <div class="details">
+        <h2>SomeOne Famous<br><span>Actor</span></h2>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgBx">
+        <img src="./images/pig.jpg" alt="images">
+      </div>
+      <div class="details">
+        <h2>SomeOne Stubborn<br><span>HR manager</span></h2>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgBx">
+        <img src="./images/Miniature-Horse.jpg" alt="images">
+      </div>
+      <div class="details">
+        <h2>SomeOne Famous<br><span>Producer</span></h2>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgBx">
+        <img src="./images/Guinea-Pig.jpg" alt="images">
+      </div>
+      <div class="details">
+        <h2>SomeOne Famous<br><span>Actor</span></h2>
+      </div>
+    </div>
+  </section>
+
+  <footer role="contentinfo">
+    <p>🌈 &copy; 2024 PetTherapyOne. Healing Hearts, One Paw at a Time. 🐾</p>
+    <div class="social-icons" aria-label="Social Media Links">
+      <a href="#" aria-label="Visit our Facebook page" title="Facebook"><i class="fa fa-facebook"></i></a>
+      <a href="#" aria-label="Follow us on X-Twitter" title="X-Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="Check out our Instagram" title="Instagram"><i class="fa fa-instagram"></i></a>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/4562b23ee3.js" crossorigin="anonymous"></script>
+  <script src="https://site-assets.fontawesome.com/releases/v6.1.0/css/all.css"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script defer src="./scripts.js"></script>
+  <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
 </body>
-
-</html>
