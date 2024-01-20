@@ -13,7 +13,67 @@
         rel="stylesheet" />
     <meta name="description"
         content="Contact Pet TherapyOne for inquiries, partnerships, or to schedule therapy sessions with our trained animals. We're here to help and make a positive impact.">
+    <style>
+      /* Popup container - can be anything you want */
+      .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* The actual popup */
+      .popup .popuptext {
+        visibility: hidden;
+        width: 160px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -80px;
+      }
+      
+      /* Popup arrow */
+      .popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+      
+      /* Toggle this class - hide and show the popup */
+      .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+      }
+      
+      /* Add animation (fade in the popup) */
+      @-webkit-keyframes fadeIn {
+        from {opacity: 0;} 
+        to {opacity: 1;}
+      }
+      
+      @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+      }
+    </style>
 </head>
+
+
 
 <body class="margin">
 
@@ -38,7 +98,7 @@
             <p>For any questions, inquiries, or if you're looking to explore collaboration possibilities, feel free to
                 get in touch with us using the form provided.</p>
         </article>
-        <form method="post" id="contact-form">
+        <form method="post" action="javascript:void(0);" onsubmit="handleFormSubmission()" id="contact-form">
             <label for="name">👶 Your Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -48,7 +108,10 @@
             <label for="message">✨ Your Message:</label>
             <textarea id="message" name="message" required></textarea>
 
-            <button type="submit" id="send_msg">Send Message</button>
+            <div id="success-message"  class="popup" onsubmit="myFunction()"><button type="submit">Send Message</button>
+              <span class="popuptext" id="myPopup">Message sent!</span>
+            </div>
+
         </form>
         <div id="success-message" class="success-message" aria-live="polite"></div>
         <!-- aria-live="polite" used to ensure that important updates( here the success message) are communicated to user relying on screen reader in a timely and non-disruptive manner. -->
@@ -69,6 +132,33 @@
     <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script defer src="./script.js"></script>
+    <script>
+         function handleFormSubmission() {
+        
+        myFunction(); // Display the success message
+
+        setTimeout(function() {
+            document.getElementById("contact-form").reset();
+            location.reload();
+        }, 3000);
+
+        // Prevent the default form submission behavior
+        return false;
+    }
+
+    // Toggle the visibility of the popup
+    function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+    }
+    </script>
 </body>
 
 </html>
+
+
+
+
+
+
+
