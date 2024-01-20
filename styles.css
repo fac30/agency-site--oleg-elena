@@ -479,7 +479,7 @@ button:hover {
     background-color: #388e3c;
 }
 
-#success-message {
+/* #success-message {
     display: none;
     /* background-color: #2e7d32;
     color: #fff; */
@@ -489,7 +489,7 @@ button:hover {
     margin-left: 140px;
     border: none;
     max-width: 50%;
-}
+} */
 
 /* overlay card titles */
 
