@@ -131,24 +131,24 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script defer src="./script.js"></script>
     <script>
-         function handleFormSubmission() {
-        
-        myFunction(); // Display the success message
-
-        setTimeout(function() {
-            document.getElementById("contact-form").reset();
-            location.reload();
-        }, 3000);
-
-        // Prevent the default form submission behavior
-        return false;
-        }
+        function handleFormSubmission() {
+            
+            myFunction(); // Display the success message
     
-        // Toggle the visibility of the popup
-        function myFunction() {
-            var popup = document.getElementById("myPopup");
-            popup.classList.toggle("show");
-        }
+            setTimeout(function() {
+                document.getElementById("contact-form").reset();
+                location.reload();
+            }, 3000);
+    
+            // Prevent the default form submission behavior
+            return false;
+            }
+        
+            // Toggle the visibility of the popup
+            function myFunction() {
+                var popup = document.getElementById("myPopup");
+                popup.classList.toggle("show");
+            }
     </script>
 </body>
 
