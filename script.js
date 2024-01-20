@@ -37,20 +37,20 @@ function indexPageScript() {
 };
 
 
-function contactPageScript() {
-    const contactForm = document.getElementById("contact-form");
-    const successMessage = document.getElementById("success-message");
+// function contactPageScript() {
+//     const contactForm = document.getElementById("contact-form");
+//     const successMessage = document.getElementById("success-message");
 
-    contactForm.addEventListener("submit", function (event) {
-        event.preventDefault();
-        successMessage.textContent = "Message sent! We'll be in touch soon. Thank you!";
-        successMessage.style.display = "block";
+//     contactForm.addEventListener("submit", function (event) {
+//         event.preventDefault();
+//         successMessage.textContent = "Message sent! We'll be in touch soon. Thank you!";
+//         successMessage.style.display = "block";
 
-        setTimeout(function () {
-            successMessage.style.display = "none";
-        }, 3000);
-    });
-}
+//         setTimeout(function () {
+//             successMessage.style.display = "none";
+//         }, 3000);
+//     });
+// }
 
 
 // function aboutUsPageScript() {
