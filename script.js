@@ -64,3 +64,16 @@ function contactPageScript() {
 //     updateRightPropertyAboutUs();
 //     window.addEventListener('resize', updateRightPropertyAboutUs);
 // }
+
+
+// CONTACTS Page :
+// onclick() event handler :
+// let send_msg = document.getElementById("send_msg");
+
+// function changeColor(bcolor) {
+//     send_msg.style.backgroundColor = bcolor;
+// }
+
+// function send_msg_clicked() {
+//     changeColor("blue");
+// };
