@@ -327,7 +327,7 @@ ul#key-points li a:hover {
 }
 
 .box {
-    width: 1086px;
+    max-width: 1086px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-gap: 1rem;
