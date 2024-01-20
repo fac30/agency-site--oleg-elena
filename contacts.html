@@ -97,7 +97,7 @@
             <p>For any questions, inquiries, or if you're looking to explore collaboration possibilities, feel free to
                 get in touch with us using the form provided.</p>
         </article>
-        <form method="post" id="contact-form">
+        <form method="post" action="javascript:void(0);" onsubmit="handleFormSubmission()" id="contact-form">
             <label for="name">👶 Your Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -106,7 +106,7 @@
 
             <label for="message">✨ Your Message:</label>
             <textarea id="message" name="message" required></textarea>
-            <div id="success-message"  class="popup" onclick="myFunction()"><button type="submit">Send Message</button>
+            <div id="success-message"  class="popup" onsubmit="myFunction()"><button type="submit">Send Message</button>
               <span class="popuptext" id="myPopup">Message sent!</span>
             </div>
         </form>
@@ -130,11 +130,24 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script defer src="./script.js"></script>
     <script>
-      // When the user clicks on div, open the popup
-      function myFunction() {
+         function handleFormSubmission() {
+        
+        myFunction(); // Display the success message
+
+        setTimeout(function() {
+            document.getElementById("contact-form").reset();
+            location.reload();
+        }, 3000);
+
+        // Prevent the default form submission behavior
+        return false;
+    }
+
+    // Toggle the visibility of the popup
+    function myFunction() {
         var popup = document.getElementById("myPopup");
         popup.classList.toggle("show");
-      }
+    }
     </script>
 </body>
 
