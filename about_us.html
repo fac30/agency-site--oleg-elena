@@ -11,66 +11,76 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
         rel="stylesheet" />
+    <meta name="description"
+        content="Discover the mission and values of Pet TherapyOne, a dedicated pet therapy agency committed to providing emotional support and comfort through trained therapy animals. Learn about our journey, goals, and the positive impact we aim to create in the community.">
 
 </head>
 
-<style>
-    /* .main {
-        columns: 250px 3;
-        column-gap: 3em;
-        column-rule: 2px dotted #070641;
-    }
-
-    img {
-        display: block;
-        margin: 1.5em 0;
-        max-width: 100%;
-    }
-
-    h3 {
-        column-span: all;
-    } */
-</style>
-
 <body class="margin">
 
-    <header role="banner">
-        <h1>Welcome to PetTherapyOne!</h1>
+    <header role="banner" class="background-img">
+        <h1>PetTherapyOne - About Us</h1>
         <h2>🐾 Bringing Joy Through the Magic of Pets 🌈</h2>
     </header>
 
-    <nav role="navigation">
-        <a href="./index.html" aria-label="Home">Home</a>
-        <a href="./about_us.html" aria-label="About Us">About Us</a>
-        <a href="./meet_the_team.html" aria-label="Meet the Team">Meet the Team</a>
-        <a href="./contacts.html" aria-label="Contacts">Contacts</a>
+    <nav role="navigation" aria-label="Main Navigation">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about_us.html">About Us</a></li>
+            <li><a href="./meet_the_team.html">Meet the Team</a></li>
+            <li><a href="./contacts.html">Contacts</a></li>
+        </ul>
     </nav>
 
     <main id="about" role="region" aria-labelledby="article-heading">
-        <h3 class="article-heading">🌟 Discover the Magic of PetTherapyOne!</h3>
-        <article>
-            <p>At PetTherapyOne, we're on a mission to provide comfort, joy, and healing to children facing a variety of
-                challenges. Walk alongside our furry therapists as they turn challenges into smiles, one paw at a
-                time!"🐾
-            </p>
-        </article>
         <h3 class="article-heading">🌟 Key points</h3>
         <section>
             <ul id="key-points">
-                <li>🐾Emotional support animals provide comfort and stress relief to people suffering from mental
-                    health
-                    issues.</li>
-                <li>🐾Dogs are the most common type of emotional support animal because they are good at gauging human
-                    emotion and take well to special training.</li>
-                <li>🐾Many other types of animals also make great emotional support partners–especially for people who
-                    are
-                    allergic to or afraid of dogs.</li>
-                <li>🐾An emotional support or therapy animal is not quite the same thing as a service animal, which
-                    provides physical help to its owner.</li>
+                <li id="point-1"><a href="#why-choose-box">🐾Emotional support animals provide comfort and stress relief
+                        to people suffering from mental health issues.</a></li>
+                <li id="point-2"><a href="#diverse-options-box">🐾Dogs are the most common type of emotional support
+                        animal because they are good at gauging human emotion and take well to special training.</a>
+                </li>
+                <li id="point-3"><a href="#commitment-to-community-box">🐾Many other types of animals also make great
+                        emotional support partners - especially for people who are allergic to or afraid of dogs.</a>
+                </li>
+                <li id="point-4"><a href="#join-us-box">🐾An emotional support or therapy animal is not quite the same
+                        thing as a service animal, which provides physical help to its owner.</a></li>
             </ul>
         </section>
-    </main>
 
+        <section id="additional-section">
+            <div class="key-points-box" role="region" aria-labelledby="why-choose-heading" id="why-choose-box">
+                <h3 id="why-choose-heading"><a href="#point-1">Why Choose Pet TherapyOne?</a></h3>
+                <p>At PetTherapyOne, we are passionate about the well-being of individuals facing mental health
+                    challenges. Our pet therapy programs are designed to bring joy, comfort, and healing through the
+                    magic of pets.</p>
+            </div>
+
+            <div class="key-points-box" role="region" aria-labelledby="diverse-options-heading"
+                id="diverse-options-box">
+                <h3 id="diverse-options-heading"><a href="#point-2">Diverse Range of Support Options</a></h3>
+                <p>We recognize the unique needs of each individual. While dogs are popular choices, we offer a diverse
+                    range of emotional support animals, including rabbits, birds, and more. Our goal is to ensure
+                    everyone can benefit from the companionship of a therapy animal.</p>
+            </div>
+
+            <div class="key-points-box" role="region" aria-labelledby="commitment-to-community-heading"
+                id="commitment-to-community-box">
+                <h3 id="commitment-to-community-heading"><a href="#point-3">Our Commitment to Community</a></h3>
+                <p>PetTherapyOne is not just an agency; we are a community dedicated to making a difference. Through
+                    tailored therapy programs and active community outreach, we strive to extend the benefits of pet
+                    therapy to as many people as possible.</p>
+            </div>
+
+            <div class="key-points-box" role="region" aria-labelledby="join-us-heading" id="join-us-box">
+                <h3 id="join-us-heading"><a href="#point-4">Join Us in Making a Difference</a></h3>
+                <p>Discover the joy and healing power that pet therapy can bring. Whether you're seeking support for
+                    yourself or a loved one, or if you're interested in volunteering with our therapy animals,
+                    PetTherapyOne welcomes you to be a part of our compassionate community.</p>
+            </div>
+        </section>
+    </main>
 
     <footer role="contentinfo">
         <p>🌈 &copy; 2024 PetTherapyOne. Healing Hearts, One Paw at a Time. 🐾</p>
@@ -80,13 +90,15 @@
             <a href="#" aria-label="Check out our Instagram" title="Instagram"><i class="fa fa-instagram"></i></a>
         </div>
     </footer>
+
+    <script defer src="./script.js"></script>
+
     <script src="https://kit.fontawesome.com/4562b23ee3.js" crossorigin="anonymous"></script>
     <script src="https://site-assets.fontawesome.com/releases/v6.1.0/css/all.css"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script defer src="./scripts.js"></script>
 
 </body>
 

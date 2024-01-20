@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f0f0f0;
     color: #333;
+    position: relative;
 }
 
 header {
@@ -11,6 +12,10 @@ header {
     color: #fff;
     text-align: center;
     padding: 2em 0;
+}
+
+.background-img {
+    background-image: url(./images/grass.jpg);
 }
 
 nav {
@@ -37,23 +42,24 @@ nav a:hover {
 
 ul {
     list-style-type: none;
-    /* Remove default list styling */
     margin: 0;
-    /* Remove default margin */
     padding: 0;
-    /* Remove default padding */
     display: flex;
-    /* Use flexbox to make the list items appear horizontally */
     justify-content: center;
     flex-wrap: wrap;
 }
 
 li {
     margin-right: 20px;
-    /* Add spacing between list items */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1201px) {
+    .key-points-box {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
     nav {
         display: flex;
         flex-wrap: wrap;
@@ -63,11 +69,31 @@ li {
     nav a {
         margin: 0 10px;
     }
+
+    #additional-section {
+        flex-direction: column;
+    }
+
+    .key-points-box {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .grid-items {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
     nav a {
         margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .key-points-box {
+        padding: 15px;
+        font-size: 14px;
     }
 }
 
@@ -80,10 +106,6 @@ main {
     color: #333;
 }
 
-h1,
-h2 {
-    color: #fff;
-}
 
 h1 {
     font-size: 2.5rem;
@@ -96,7 +118,12 @@ h3 {
 
 .article-heading {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
+}
+
+.article-heading>a {
+    text-decoration: none;
+    color: #115113;
 }
 
 article {
@@ -117,9 +144,9 @@ article>p {
 }
 
 .pet-image:hover img {
-    transform: scale(1.1);  /* Increase the size by 10% on hover */
+    transform: scale(1.1);
+    /* Increase the size by 10% on hover */
 }
-
 
 footer>p {
     font-size: 1rem;
@@ -129,7 +156,6 @@ footer>p {
     margin: 0 10px;
     font-size: 1.5rem;
     padding: 1rem;
-
 }
 
 .social-icons .fa-facebook:hover {
@@ -146,7 +172,6 @@ footer>p {
     color: white;
     transition: all 0.2s;
 }
-
 
 button {
     background-color: #2e7d32;
@@ -170,26 +195,100 @@ footer {
     padding: 1rem;
 }
 
-/* About us styles: */
-main section {
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-main section ul {
+/* ABOUT US styles: */
+
+ul#key-points {
     list-style-type: none;
+    margin: 0;
     padding-left: 20px;
+    display: flex;
+    justify-content: start;
 }
 
-main section li {
+ul#key-points li {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 10px;
+    vertical-align: middle;
 }
 
-/* Meet the Team styles: */
+ul#key-points li a {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    padding: 5px;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    margin-right: 10px;
+    /* Adjust spacing between links */
+    transition: background-color 0.3s ease;
+}
+
+ul#key-points li a:hover {
+    background-color: #f0f0f0;
+}
+
+#additional-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.key-points-box {
+    width: 48%;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.key-points-box h3>a {
+    text-decoration: none;
+    color: #115113;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.key-points-box h3>a:hover {
+    background-color: #f0f0f0;
+}
+
+.key-points-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media screen and (max-width: 1200px) {
+    .key-points-box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #additional-section {
+        flex-direction: column;
+    }
+
+    .key-points-box {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .key-points-box {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+
+/* MEET THE TEAM styles: */
 
 .grid-items {
     display: grid;
@@ -198,7 +297,7 @@ main section li {
     grid-auto-rows: 13rem;
     padding: 2rem;
     background-image: url(./images/grass.jpg);
-    border-radius: 00.25rem;
+    border-radius: 0.25rem;
     box-shadow: 0 0 0 3px rgb(18, 59, 2);
 }
 
@@ -227,12 +326,111 @@ main section li {
     box-shadow: 5px 5px 0 0 rgb(36, 80, 18);
 }
 
+.box {
+    width: 1086px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 1rem;
+    margin: 50px auto;
+    justify-content: space-between;
+}
 
-/* Contacts styles : */
+.card {
+    position: relative;
+    width: 306px;
+    height: 346px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+
+.card:before,
+.card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: #fff;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.card:hover:before {
+    transform: rotate(20deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+}
+
+.card:hover:after {
+    transform: rotate(10deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+}
+
+.card .imgBx {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #222;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.card:hover .imgBx {
+    bottom: 80px;
+}
+
+.card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .details {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+}
+
+.card .details h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.card .details h2 span {
+    font-weight: 500;
+    font-size: 16px;
+    color: #f38695;
+    display: block;
+    margin-top: 5px;
+}
+
+
+.details h2 a {
+    text-decoration: none;
+}
+
+/* CONTACTS styles : */
+
 #contact article {
     max-width: 700px;
     margin: 0 auto 20px;
     text-align: center;
+    position: relative;
 }
 
 #contact-form {
@@ -252,6 +450,7 @@ main section li {
     padding: 8px;
     margin-bottom: 10px;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 #contact-form button {
@@ -278,4 +477,46 @@ button {
 
 button:hover {
     background-color: #388e3c;
+}
+
+#success-message {
+    display: none;
+    /* background-color: #2e7d32;
+    color: #fff; */
+    color: #115113;
+    padding: 10px 15px;
+    margin-top: 20px;
+    margin-left: 140px;
+    border: none;
+    max-width: 50%;
+}
+
+/* overlay card titles */
+
+.card {
+    position: relative;
+}
+
+.imgBx::before {
+    content: attr(data-title);
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: #115113;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: normal;
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+
+}
+
+.imgBx:hover::before {
+    opacity: 1;
 }

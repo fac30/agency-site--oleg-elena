@@ -11,120 +11,28 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
     rel="stylesheet" />
-
+  <meta name="description"
+    content="Learn more about Pet TherapyOne, a dedicated pet therapy agency providing emotional support and comfort through trained therapy animals. Discover our mission and team members.">
 </head>
-
-<style>
-  .box {
-    width: 1086px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    grid-gap: 1rem;
-    margin: 50px auto;
-    justify-content: space-between;
-  }
-
-  .card {
-    position: relative;
-    width: 306px;
-    height: 346px;
-    background: #fff;
-    margin: 0 auto;
-    border-radius: 4px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
-  }
-
-  .card:before,
-  .card:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 4px;
-    background: #fff;
-    transition: 0.5s;
-    z-index: -1;
-  }
-
-  .card:hover:before {
-    transform: rotate(20deg);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
-  }
-
-  .card:hover:after {
-    transform: rotate(10deg);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
-  }
-
-  .card .imgBx {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    bottom: 10px;
-    right: 10px;
-    background: #222;
-    transition: 0.5s;
-    z-index: 1;
-  }
-
-  .card:hover .imgBx {
-    bottom: 80px;
-  }
-
-  .card .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .card .details {
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    height: 60px;
-    text-align: center;
-  }
-
-  .card .details h2 {
-    margin: 0;
-    padding: 0;
-    font-weight: 600;
-    font-size: 20px;
-    color: #777;
-    text-transform: uppercase;
-  }
-
-  .card .details h2 span {
-    font-weight: 500;
-    font-size: 16px;
-    color: #f38695;
-    display: block;
-    margin-top: 5px;
-  }
-</style>
 
 <body class="margin">
 
-  <header role="banner">
-    <h1>Welcome to PetTherapyOne!</h1>
+  <header role="banner" class="background-img">
+    <h1>PetTherapyOne - Meet the Team</h1>
     <h2>🐾 Bringing Joy Through the Magic of Pets 🌈</h2>
   </header>
 
-  <nav role="navigation">
-    <a href="./index.html" aria-label="Home">Home</a>
-    <a href="./about_us.html" aria-label="About Us">About Us</a>
-    <a href="./meet_the_team.html" aria-label="Meet the Team">Meet the Team</a>
-    <a href="./contacts.html" aria-label="Contacts">Contacts</a>
+  <nav role="navigation" aria-label="Main Navigation">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about_us.html">About Us</a></li>
+      <li><a href="./meet_the_team.html">Meet the Team</a></li>
+      <li><a href="./contacts.html">Contacts</a></li>
+    </ul>
   </nav>
 
   <main id="about" role="region" aria-labelledby="article-heading">
-    <h3 class="article-heading">🌟 Meet the team!</h3>
+    <h3 class="article-heading">🌟 <a href="#meet_team">Meet the team!</a></h3>
     <article>
       <p>At PetTherapyOne, we're on a mission to provide comfort, joy, and healing to children facing a variety of
         challenges. Walk alongside our furry therapists as they turn challenges into smiles, one paw at a
@@ -132,110 +40,163 @@
       </p>
     </article>
   </main>
+
   <section class="box">
     <div class="card">
-      <div class="imgBx">
-        <img src="./images/dog.jpg" alt="images">
+      <div class="imgBx" data-title="Comfort Companion: A loyal friend who brings joy and comfort to everyone."
+        role="img" aria-label="Buddy - Comfort Companion">
+        <img src="./images/dog.jpg" alt="Buddy - Comfort Companion">
+        <div class="overlay-title">Comfort Companion</div>
       </div>
       <div class="details">
-        <h2>SomeOne Famous<br><span>Director</span></h2>
+        <h2>Buddy<br><span>Comfort Companion</span></h2>
       </div>
     </div>
 
     <div class="card">
-      <div class="imgBx">
-        <img src="./images/Syrian-Hamster-close-up-1024x535.jpg" alt="images">
+      <div class="imgBx"
+        data-title="Small Wonder Therapist: Squeaky is a tiny therapist with a big heart, offering warmth and comfort."
+        role="img" aria-label="Squeaky - Small Wonder Therapist">
+        <img src="./images/Syrian-Hamster-close-up-1024x535.jpg" alt="Squeaky - Small Wonder Therapist">
+        <div class="overlay-title">Small Wonder Therapist</div>
       </div>
       <div class="details">
-        <h2>SomeOne Tiny<br><span>Producer</span></h2>
+        <h2>Squeaky<br><span>Small Wonder Therapist</span></h2>
       </div>
     </div>
 
     <div class="card">
-      <div class="imgBx">
-        <img src="./images/goat.jpg" alt="images">
+      <div class="imgBx"
+        data-title="Stress-Relief Specialist: Horney specializes in relieving stress and creating a positive environment."
+        role="img" aria-label="Horney - Stress-Relief Specialist">
+        <img src="./images/goat.jpg" alt="Horney - Stress-Relief Specialist">
+        <div class="overlay-title">Stress-Relief Specialist</div>
       </div>
       <div class="details">
-        <h2>SomeOne Horny<br><span>Actor</span></h2>
-      </div>
-    </div>
-    <div class="card">
-      <div class="imgBx">
-        <img src="./images/chicken.jpg" alt="images">
-      </div>
-      <div class="details">
-        <h2>SomeOne Chicky<br><span>Designer</span></h2>
+        <h2>Horney<br><span>Stress-Relief Specialist</span></h2>
       </div>
     </div>
 
     <div class="card">
-      <div class="imgBx">
-        <img src="./images/alpalca-5.jpg" alt="images">
+      <div class="imgBx"
+        data-title="Morning Energizer: Rusty, the morning energizer, brings a burst of energy and positivity."
+        role="img" aria-label="Rusty - Morning Energizer">
+        <img src="./images/Emotional-Support-Animals-Chicken-1024x535.jpg" alt="Rusty - Morning Energizer">
+        <div class="overlay-title">Morning Energizer</div>
       </div>
       <div class="details">
-        <h2>SomeOne Thin<br><span>Analyst</span></h2>
+        <h2>Rusty<br><span>Morning Energizer</span></h2>
       </div>
     </div>
 
     <div class="card">
-      <div class="imgBx">
-        <img src="./images/rabbit.jpg" alt="images">
+      <div class="imgBx"
+        data-title="Emotional Support Specialists: Tea Coffee and Vanilla are expert emotional support specialists."
+        role="img" aria-label="Tea Coffee and Vanilla - Emotional Support Specialists">
+        <img src="./images/alpalca-5.jpg" alt="Tea Coffee and Vanilla - Emotional Support Specialists">
+        <div class="overlay-title">Emotional Support Specialists</div>
       </div>
       <div class="details">
-        <h2>SomeOne Eary<br><span>Office manager</span></h2>
-      </div>
-    </div>
-    <div class="card">
-      <div class="imgBx">
-        <img src="./images/sheep.jpg" alt="images">
-      </div>
-      <div class="details">
-        <h2>SomeOne Stubborn<br><span>HR manager</span></h2>
+        <h2>Tea Coffee and Vanilla<br><span>Emotional Support Specialists</span></h2>
       </div>
     </div>
 
     <div class="card">
-      <div class="imgBx">
-        <img src="./images/Emotional-Support-Animals-Chicken-1024x535.jpg" alt="images">
+      <div class="imgBx"
+        data-title="Smile Creator: Thumper, the smile creator, brings joy and laughter to everyone around." role="img"
+        aria-label="Thumper - Smile Creator">
+        <img src="./images/rabbit.jpg" alt="Thumper - Smile Creator">
+        <div class="overlay-title">Smile Creator</div>
       </div>
       <div class="details">
-        <h2>SomeOne Famous<br><span>Producer</span></h2>
+        <h2>Thumper<br><span>Smile Creator</span></h2>
       </div>
     </div>
 
     <div class="card">
-      <div class="imgBx">
-        <img src="./images/pair-of-macaws-perching-on-a-branch-picture-id507497912.jpg" alt="images">
+      <div class="imgBx"
+        data-title="Fluffy Stress Busters: Holly and Benji, the fluffy stress busters, offer comfort and relief."
+        role="img" aria-label="Holly and Benji - Fluffy Stress Busters">
+        <img src="./images/sheep.jpg" alt="Holly and Benji - Fluffy Stress Busters">
+        <div class="overlay-title">Fluffy Stress Busters</div>
       </div>
       <div class="details">
-        <h2>SomeOne Famous<br><span>Actor</span></h2>
+        <h2>Holly and Benji<br><span>Fluffy Stress Busters</span></h2>
       </div>
     </div>
+
     <div class="card">
-      <div class="imgBx">
-        <img src="./images/pig.jpg" alt="images">
+      <div class="imgBx" data-title="Happy Snouter: Oinkster is the happy snouter who spreads joy with every oink."
+        role="img" aria-label="Oinkster - Happy Snouter">
+        <img src="./images/pig.jpg" alt="Oinkster - Happy Snouter">
+        <div class="overlay-title">Happy Snouter</div>
       </div>
       <div class="details">
-        <h2>SomeOne Stubborn<br><span>HR manager</span></h2>
+        <h2>Oinkster<br><span>Happy Snouter</span></h2>
       </div>
     </div>
+
     <div class="card">
-      <div class="imgBx">
-        <img src="./images/Miniature-Horse.jpg" alt="images">
+      <div class="imgBx"
+        data-title="Chirpy Communicators: Ruby and Js, the chirpy communicators, bring positive vibes and connection."
+        role="img" aria-label="Ruby and Js - Chirpy Communicators">
+        <img src="./images/pair-of-macaws-perching-on-a-branch-picture-id507497912.jpg"
+          alt="Ruby and Js - Chirpy Communicators">
+        <div class="overlay-title">Chirpy Communicators</div>
       </div>
       <div class="details">
-        <h2>SomeOne Famous<br><span>Producer</span></h2>
+        <h2>Ruby and Js<br><span>Chirpy Communicators</span></h2>
       </div>
     </div>
+
     <div class="card">
-      <div class="imgBx">
-        <img src="./images/Guinea-Pig.jpg" alt="images">
+      <div class="imgBx"
+        data-title="Gentle Spirit: Raindrop, with a gentle spirit, brings calmness and serenity to all." role="img"
+        aria-label="Raindrop - Gentle Spirit">
+        <img src="./images/Miniature-Horse.jpg" alt="Raindrop - Gentle Spirit">
+        <div class="overlay-title">Gentle Spirit</div>
       </div>
       <div class="details">
-        <h2>SomeOne Famous<br><span>Actor</span></h2>
+        <h2>Raindrop<br><span>Gentle Spirit</span></h2>
       </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx"
+        data-title="Therapists, managers and designers: Elena and Martino bring healing, companionship, and expertise to our agency"
+        role="img" aria-label="Elena and Martino - Pet Therapists">
+        <img src="./images/elena_and_martino.jpeg" alt="Elena and Martino - Pet Therapists">
+        <div class="overlay-title">Pet Therapists</div>
+      </div>
+      <div class="details">
+        <h2>
+          <a href="https://github.com/3le81" target="_blank" role="link" tabindex="0"
+            aria-label="Navigate to Elena and Martino's page">
+            Elena and Martino<br><span id="meet_team">Pet Therapists</span>
+          </a>
+        </h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx"
+        data-title="Agency Director: Oleg, the agency director, oversees and manages the entire pet therapy agency."
+        role="img" aria-label="Oleg - Agency Director">
+        <img src="./images/oleg.png" alt="Oleg - Agency Director">
+        <div class="overlay-title">Agency Director</div>
+      </div>
+      <div class="details">
+        <h2>
+          <a href="https://github.com/otam-mato" target="_blank" role="link" tabindex="0"
+            aria-label="Navigate to Oleg's page">
+            Oleg<br><span>Agency Director</span>
+          </a>
+        </h2>
+      </div>
+
     </div>
   </section>
+
 
   <footer role="contentinfo">
     <p>🌈 &copy; 2024 PetTherapyOne. Healing Hearts, One Paw at a Time. 🐾</p>
@@ -250,7 +211,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script defer src="./scripts.js"></script>
+  <script defer src="./script.js"></script>
   <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
 
 </body>
