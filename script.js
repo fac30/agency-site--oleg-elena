@@ -67,14 +67,13 @@ document.addEventListener("DOMContentLoaded", function () {
 // }
 
 
-// CONTACTS Page :
-// onclick() event handler :
-// let send_msg = document.getElementById("send_msg");
+// Function to handle the menu toggle
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
 
-// function changeColor(bcolor) {
-//     send_msg.style.backgroundColor = bcolor;
-// }
-
-// function send_msg_clicked() {
-//     changeColor("blue");
-// };
+    menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("collapsed");
+        menuToggle.classList.toggle("active");
+    });
+});
