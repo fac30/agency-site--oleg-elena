@@ -24,17 +24,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-function indexPageScript() {
+document.addEventListener("DOMContentLoaded", function () {
+    // Your code here
     var firstChild = document.getElementById('firstChild');
 
     function updateRightProperty() {
         var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         firstChild.style.right = (screenWidth < 950) ? '0px' : '-40px';
     }
+
     updateRightProperty();
     window.addEventListener('resize', updateRightProperty);
-
-};
+});
 
 
 // function contactPageScript() {
