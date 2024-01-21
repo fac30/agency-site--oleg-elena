@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateRightProperty() {
         var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        firstChild.style.right = (screenWidth < 950) ? '0px' : '-40px';
+        firstChild.style.right = (screenWidth < 900) ? '0px' : '-40px';
     }
 
     updateRightProperty();
