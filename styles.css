@@ -11,6 +11,30 @@ body {
     position: relative;
 }
 
+/* Skip to content : Visually hidden class for screen readers */
+.skip-to-content {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Ensure the link is accessible via keyboard navigation */
+.skip-to-content:active,
+.skip-to-content:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    z-index: 999;
+    background-color: #007BFF;
+    color: #fff;
+}
+
 header {
     background-color: #2e7d32;
     color: #fff;
@@ -162,6 +186,7 @@ li {
         display: block;
     }
 }
+
 
 main {
     max-width: 1000px;
@@ -375,9 +400,12 @@ ul#key-points li a:hover {
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 0.5rem;
+
 }
 
+
 .grid-item-text {
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -391,6 +419,7 @@ ul#key-points li a:hover {
     margin-top: -40px;
     box-shadow: 5px 5px 0 0 rgb(36, 80, 18);
 }
+
 
 .box {
     width: 1086px;
