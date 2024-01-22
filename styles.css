@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -109,11 +113,15 @@ li {
     z-index: 1000;
 }
 
+.menu-toggle:hover {
+    background: rgba(14, 104, 4, 0.4);
+}
+
 .menu-toggle .bar {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: yellow;
     margin: 5px 0;
     transition: 0.4s;
 }
@@ -481,6 +489,20 @@ ul#key-points li a:hover {
     text-decoration: none;
 }
 
+/* Media query for smaller screens */
+@media screen and (max-width: 700px) {
+    .box {
+
+        width: 100%;
+        margin: 0;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+
 /* CONTACTS styles : */
 
 #contact article {
@@ -523,7 +545,7 @@ ul#key-points li a:hover {
     background-color: #388e3c;
 }
 
-button {
+/* button {
     background-color: #2e7d32;
     color: #fff;
     padding: 10px 15px;
@@ -534,7 +556,7 @@ button {
 
 button:hover {
     background-color: #388e3c;
-}
+} */
 
 #success-message {
     display: none;
