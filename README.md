@@ -88,7 +88,7 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
 
 - **Backend:**
 
-  - Set up communication of the contact form with **MySQL** database via a **Node.js** server.
+  - Set up communication of the contact form with **MySQL** database via a **Node.js** server to store the submitted data.
  
 - **Project Management**
 
