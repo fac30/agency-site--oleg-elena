@@ -80,7 +80,7 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
 
 - **Pipeline:**
 
-  - Enhanced the project with continuous  deployment (CD) to a public domain.
+  - Enhanced the project with continuous  deployment (CD) to the Cloud hosting.
 
 - **Involved a TLS protected domain name:**
   
@@ -88,7 +88,7 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
 
 - **Backend:**
 
-  - Set up communication of the contact form with MySQL database via a Node.js server.
+  - Set up communication of the contact form with **MySQL** database via a **Node.js** server.
  
 - **Project Management**
 
