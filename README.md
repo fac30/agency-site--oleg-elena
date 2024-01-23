@@ -1,4 +1,4 @@
-# PetShopOne-agency-site
+# PetShopOne-agency-site--task
 
 **Publicly accessible domain names:**<br>
 
@@ -38,7 +38,7 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
 
 ---
 
-# PetTherapyOne Agency Website Workshop
+# # PetShopOne-agency-site--implementation 
 
 ---
 
