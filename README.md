@@ -38,7 +38,7 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
 
 ---
 
-# # PetShopOne-agency-site--implementation 
+# PetShopOne-agency-site--implementation 
 
 ---
 
