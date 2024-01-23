@@ -1,10 +1,12 @@
 # PetShopOne-agency-site--task
 
-**Publicly accessible domain names:**<br>
+## Publicly accessible domain names:<br>
 
 **https://fac30.github.io/agency-site--oleg-elena/**
 
 **https://www.pettherapyone.co.uk/**
+
+## User stories and acceptance criteria
 
 **Core Stories**<br>
 As a potential client, I want to:<br>
