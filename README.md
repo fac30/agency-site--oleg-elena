@@ -42,8 +42,6 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
 
 # PetShopOne-agency-site--implementation 
 
----
-
 ## Objectives
 
 - **Select the Topic:**
