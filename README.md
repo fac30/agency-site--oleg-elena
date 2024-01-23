@@ -78,9 +78,9 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
 
 ## Extra Features and Deployment
 
-- **Incorporate Extra Features:**
+- **Pipeline:**
 
   - Enhanced the project with continuous  deployment (CD) to a public domain.
 
-- **Automated Deployment:**
-  - Achieved automated deployment to the domain name _pettherapyone.co.uk_.
+- **Involved a TLS protected domain name:**
+  - _https://pettherapyone.co.uk_.
