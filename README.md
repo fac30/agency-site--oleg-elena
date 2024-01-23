@@ -80,7 +80,7 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
 
 - **Incorporate Extra Features:**
 
-  - Enhance the project with additional elements, such as automatic deployment to a public domain.
+  - Enhanced the project with continuous  deployment (CD) to a public domain.
 
 - **Automated Deployment:**
   - Achieved automated deployment to the domain name _pettherapyone.co.uk_.
