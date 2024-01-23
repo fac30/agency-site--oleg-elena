@@ -59,6 +59,8 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
 
 - We've chosen _petTherapyOne_ as the name for our Pet Therapy Agency.
 
+- Aiming to customize therapy programs, especially for children, and make our website universally accessible.
+
 ### Page Development:
 
 - Successfully created four pages:
@@ -68,7 +70,7 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
   - Meet the team
   - Contacts
 
-- Aiming to customize therapy programs, especially for children, and make our website universally accessible.
+
 
 ### Application of Skills:
 
