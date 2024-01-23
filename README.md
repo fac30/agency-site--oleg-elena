@@ -83,4 +83,13 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
   - Enhanced the project with continuous  deployment (CD) to a public domain.
 
 - **Involved a TLS protected domain name:**
+  
   - _https://pettherapyone.co.uk_.
+
+- **Backend:**
+
+  - Set up communication of the contact form with MySQL database via a Node.js server.
+ 
+- **Project Management**
+
+  - Managed the project flow using a Kanban board.
