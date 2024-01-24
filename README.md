@@ -32,7 +32,7 @@ As a visually impaired user, I want to:
 
 **Stretch Goal**
 
-&nbsp;&nbsp;&nbsp;⬜️ Use the automatic trigger functionality of your GitHub project board<br>
+&nbsp;&nbsp;&nbsp;✅ Use the automatic trigger functionality of your GitHub project board<br>
 
 ---
 
@@ -53,7 +53,7 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
 
 ---
 
-## Current Progress Update
+## Current Status
 
 ### Topic Selection:
 
@@ -87,11 +87,14 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
 - **Involved a TLS protected domain name:**
   
   - _https://pettherapyone.co.uk_.
+ 
+- **Project Management**
+
+  - Managed the project flow using a Kanban board.
 
 - **Backend:**
 
   - Set up communication of the contact form with **MySQL** database via a **Node.js** server to store the submitted data.
  
-- **Project Management**
+<img width="800" alt="Screenshot 2024-01-24 at 12 41 16" src="https://github.com/fac30/agency-site--oleg-elena/assets/113034133/29054156-2491-4b0a-bf86-68d1848ff16d">
 
-  - Managed the project flow using a Kanban board.
