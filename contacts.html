@@ -13,8 +13,8 @@
     rel="stylesheet" />
   <meta name="description"
     content="Contact Pet TherapyOne for inquiries, partnerships, or to schedule therapy sessions with our trained animals. We're here to help and make a positive impact.">
-  <style>
-    /* Popup container */
+  <!-- <style>
+    /* Popup container - can be anything you want */
     .popup {
       position: relative;
       display: inline-block;
@@ -80,7 +80,7 @@
         opacity: 1;
       }
     }
-  </style>
+  </style> -->
 </head>
 
 
@@ -112,7 +112,7 @@
       <p>For any questions, inquiries, or if you're looking to explore collaboration possibilities, feel free to
         get in touch with us using the form provided.</p>
     </article>
-    <form method="post" action="javascript:void(0);" onsubmit="handleFormSubmission()" id="contact-form">
+    <form method="post" action="http://localhost:3000/submit-form" id="contact-form">
       <label for="name">👶 Your Name:</label>
       <input type="text" id="name" name="name" maxlength="40" required>
 
@@ -120,13 +120,13 @@
       <input type="email" id="email" name="email" maxlength="40" required>
 
       <label for="message">✨ Your Message:</label>
-      <textarea id="message" name="message" maxlength="20" required></textarea>
+      <textarea id="message" name="message" maxlength="200" required></textarea>
       <div class="popup" onsubmit="myFunction()">
         <button type="submit">Send Message</button>
-        <span class="popuptext" id="myPopup">Message sent!</span>
+        <!-- <span class="popuptext" id="myPopup">Message sent!</span> -->
       </div>
     </form>
-    <div id="success-message" class="success-message" aria-live="polite"></div>
+    <!-- <div id="success-message" class="success-message" aria-live="polite"></div> -->
     <!-- aria-live="polite" used to ensure that important updates( here the success message) are communicated to user relying on screen reader in a timely and non-disruptive manner. -->
   </main>
 
@@ -149,25 +149,62 @@
   <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script defer src="./script.js"></script>
-  <script>
-    function handleFormSubmission() {
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function() {
+      async function handleFormSubmission() {
+        // Collect form data
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
 
-      myFunction(); // Display the success message
+        console.log('Name:', name);
+        console.log('Email:', email);
+        console.log('Message:', message);
+    
+        const formData = {
+          name: name,
+          email: email,
+          message: message,
+        };
+    
+        try {
+          const response = await fetch('http://localhost:3000/submit-form', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded', 
+            },
+            body: new URLSearchParams(formData),
+          });
 
-      setTimeout(function () {
-        document.getElementById("contact-form").reset();
-        location.reload();
-      }, 3000);
+          if (response.ok) {
+            const responseData = await response.json();
 
-      // Prevent the default form submission behavior
-      return false;
-    }
-
-    // Toggle the visibility of the popup
-    function myFunction() {
-      var popup = document.getElementById("myPopup");
-      popup.classList.toggle("show");
-    }
+            if (responseData.success) {
+              // Form submitted successfully, handle the response if needed
+              // myFunction(); // Display the success message
+              // setTimeout(function () {
+              //   document.getElementById("contact-form").reset();
+              //   location.reload();
+              // }, 3000);
+            } else {
+              // Handle server-side failure
+              console.error('Server-side error:', responseData.error);
+            }
+          } else {
+            // Handle error response
+            console.error('Error submitting form:', response.status, response.statusText);
+          }
+        } catch (error) {
+          console.error('Error submitting form:', error.message);
+        }
+    
+      // Toggle the visibility of the popup
+      // function myFunction() {
+      //   var popup = document.getElementById("myPopup");
+      //   popup.classList.toggle("show");
+      // }
+    });
+    
   </script>
 </body>
 
