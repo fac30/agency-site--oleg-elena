@@ -57,7 +57,7 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
 
 ### Topic Selection:
 
-- We've chosen _petTherapyOne_ as the name for our Pet Therapy Agency.
+- We've chosen **_petTherapyOne_** as the name for our Pet Therapy Agency.
 
 - Aiming to customize therapy programs, especially for children, and make our website universally accessible.
 
