@@ -84,7 +84,7 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
 
   - Set up the continuous deployment (CD) to the Cloud hosting.
 
-- **Involved a TLS protected domain name:**
+- **Involved hosting on the TLS protected domain name:**
   
   - _https://pettherapyone.co.uk_.
  
