@@ -82,7 +82,7 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
 
 - **Pipeline:**
 
-  - Enhanced the project with continuous  deployment (CD) to the Cloud hosting.
+  - Set up the continuous deployment (CD) to the Cloud hosting.
 
 - **Involved a TLS protected domain name:**
   
