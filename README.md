@@ -78,7 +78,10 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
 
 ### Application of Skills:
 
-- Using HTML semantics, implementing accessibility features, CSS grid and flex, media queries, and some Javascript scripts.
+- Using HTML semantics,
+- implementing accessibility features,
+- CSS grid and flex, media queries,
+- And some Javascript scripts.
 
 ---
 
