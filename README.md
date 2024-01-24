@@ -70,10 +70,10 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
   - Meet the team
   - Contacts
 
-<img width="200" alt="Screenshot 2024-01-24 at 12 58 10" src="https://github.com/fac30/agency-site--oleg-elena/assets/113034133/62cead26-6463-49ba-a43e-8dae441edcce">
-<img width="200" alt="Screenshot 2024-01-24 at 12 58 28" src="https://github.com/fac30/agency-site--oleg-elena/assets/113034133/dde77f4b-f3b0-4a9b-beba-de86436b0663">
-<img width="200" alt="Screenshot 2024-01-24 at 12 59 29" src="https://github.com/fac30/agency-site--oleg-elena/assets/113034133/4bd9982c-8dea-41d4-be4f-a734f92cf071">
-<img width="200" alt="Screenshot 2024-01-24 at 12 59 40" src="https://github.com/fac30/agency-site--oleg-elena/assets/113034133/0401901a-affd-43a6-8d5a-7b5b565c8f5b">
+<img width="250" alt="Screenshot 2024-01-24 at 12 58 10" src="https://github.com/fac30/agency-site--oleg-elena/assets/113034133/62cead26-6463-49ba-a43e-8dae441edcce">
+<img width="250" alt="Screenshot 2024-01-24 at 12 58 28" src="https://github.com/fac30/agency-site--oleg-elena/assets/113034133/dde77f4b-f3b0-4a9b-beba-de86436b0663">
+<img width="250" alt="Screenshot 2024-01-24 at 12 59 29" src="https://github.com/fac30/agency-site--oleg-elena/assets/113034133/4bd9982c-8dea-41d4-be4f-a734f92cf071">
+<img width="250" alt="Screenshot 2024-01-24 at 12 59 40" src="https://github.com/fac30/agency-site--oleg-elena/assets/113034133/0401901a-affd-43a6-8d5a-7b5b565c8f5b">
 
 
 ### Application of Skills:
