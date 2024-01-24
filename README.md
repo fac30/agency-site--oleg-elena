@@ -96,7 +96,8 @@ https://learn.foundersandcoders.com/course/syllabus/foundation/markup/project/
 
   - Set up communication of the contact form with the **MySQL** database via a **Node.js** server to store the submitted data.<br><br>
 
-    
+    <img width="800" alt="Screenshot 2024-01-24 at 12 50 39" src="https://github.com/fac30/agency-site--oleg-elena/assets/113034133/2c2e3e7e-26da-4512-8017-1f80e53ed71e">
+
     <img width="800" alt="Screenshot 2024-01-24 at 12 48 07" src="https://github.com/fac30/agency-site--oleg-elena/assets/113034133/fa249e2f-f794-4e97-b476-99adc6ca34dd">
 
     <img width="800" alt="Screenshot 2024-01-24 at 12 41 16" src="https://github.com/fac30/agency-site--oleg-elena/assets/113034133/29054156-2491-4b0a-bf86-68d1848ff16d">
