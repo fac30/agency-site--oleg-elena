@@ -123,11 +123,13 @@
       <textarea id="message" name="message" maxlength="200" required></textarea>
       <div class="popup" onsubmit="myFunction()">
         <button type="submit">Send Message</button>
-        <!-- <span class="popuptext" id="myPopup">Message sent!</span> -->
+        <!-- Popup container - can be anything you want -->
+      <div class="popup" id="myPopup">
+        <div class="popuptext" id="popupMessage"></div>
+      </div>
+
       </div>
     </form>
-    <!-- <div id="success-message" class="success-message" aria-live="polite"></div> -->
-    <!-- aria-live="polite" used to ensure that important updates( here the success message) are communicated to user relying on screen reader in a timely and non-disruptive manner. -->
   </main>
 
 
@@ -150,62 +152,86 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script defer src="./script.js"></script>
   <script defer>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       async function handleFormSubmission() {
         // Collect form data
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
-
+  
         console.log('Name:', name);
         console.log('Email:', email);
         console.log('Message:', message);
-    
+  
         const formData = {
           name: name,
           email: email,
           message: message,
         };
-    
+  
         try {
+          // Send form data to the server
           const response = await fetch('http://localhost:3000/submit-form', {
             method: 'POST',
             headers: {
-              'Content-Type': 'application/x-www-form-urlencoded', 
+              'Content-Type': 'application/x-www-form-urlencoded',
             },
-            body: new URLSearchParams(formData),
+            body: new URLSearchParams(formData), // Use URLSearchParams to format the data
           });
-
+  
           if (response.ok) {
-            const responseData = await response.json();
-
-            if (responseData.success) {
-              // Form submitted successfully, handle the response if needed
-              // myFunction(); // Display the success message
-              // setTimeout(function () {
-              //   document.getElementById("contact-form").reset();
-              //   location.reload();
-              // }, 3000);
-            } else {
-              // Handle server-side failure
-              console.error('Server-side error:', responseData.error);
-            }
+            // Form submitted successfully, handle the response if needed
+            console.log('Form submitted successfully');
+            myFunction(true, 'Form submitted successfully'); // Display the success message
           } else {
             // Handle error response
             console.error('Error submitting form:', response.status, response.statusText);
+            myFunction(false, 'Error: ' + response.statusText); // Display the error message
           }
+  
+          // Wait for 3 seconds and then reload the page
+          setTimeout(function () {
+            document.getElementById("contact-form").reset();
+            location.reload();
+          }, 3000);
         } catch (error) {
           console.error('Error submitting form:', error.message);
+          myFunction(false, 'Error: ' + error.message); // Display the error message
+  
+          // Wait for 3 seconds and then reload the page
+          setTimeout(function () {
+            document.getElementById("contact-form").reset();
+            location.reload();
+          }, 3000);
         }
-    
+  
+        // Prevent the default form submission behavior
+        return false;
+      }
+  
       // Toggle the visibility of the popup
-      // function myFunction() {
-      //   var popup = document.getElementById("myPopup");
-      //   popup.classList.toggle("show");
-      // }
+      function myFunction(isSuccess, message) {
+        var popup = document.getElementById("myPopup");
+        var popupMessage = document.getElementById("popupMessage");
+  
+        if (isSuccess) {
+          popupMessage.innerHTML = 'Form submitted successfully';
+        } else {
+          popupMessage.innerHTML = message;
+        }
+        popup.classList.toggle("show");
+      }
+  
+      // Attach the handleFormSubmission function to the form submission event
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
+        handleFormSubmission();
+      });
     });
-    
   </script>
+  
+  
+  
 </body>
 
 </html>

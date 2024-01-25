@@ -2,16 +2,18 @@
 // To start the server:
 //
 // npm init -y
-// npm install express body-parser mysql2
+// npm install express body-parser mysql2 cors
 // node start
 
 const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql2');
+const cors = require('cors');
 
 const app = express();
 const port = 3000;
 
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
@@ -43,7 +45,7 @@ app.post('/submit-form', (req, res) => {
       console.error('MySQL insertion error:', err);
       res.status(500).send('Internal Server Error');
     } else {
-      console.log('Form submitted');
+      console.log('Form submitted successfully');
       console.log('Inserted ID:', results.insertId); // Log the inserted ID
       res.status(200).send('Form submitted successfully');
       // res.status(200).json({ success: true }); // Send a JSON response indicating success
@@ -51,7 +53,6 @@ app.post('/submit-form', (req, res) => {
     }
   });
 });
-
 
 
 app.listen(port, () => {
