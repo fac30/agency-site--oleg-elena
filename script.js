@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+//Adjusting the "10"'s  position on the page depending on the page size
 document.addEventListener("DOMContentLoaded", function () {
-    // Your code here
     var firstChild = document.getElementById('firstChild');
 
     function updateRightProperty() {
@@ -38,35 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// function contactPageScript() {
-//     const contactForm = document.getElementById("contact-form");
-//     const successMessage = document.getElementById("success-message");
-
-//     contactForm.addEventListener("submit", function (event) {
-//         event.preventDefault();
-//         successMessage.textContent = "Message sent! We'll be in touch soon. Thank you!";
-//         successMessage.style.display = "block";
-
-//         setTimeout(function () {
-//             successMessage.style.display = "none";
-//         }, 3000);
-//     });
-// }
-
-
-// function aboutUsPageScript() {
-//     var firstChildAboutUs = document.getElementById('firstChildAboutUs');
-
-//     function updateRightPropertyAboutUs() {
-//         var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-//         firstChildAboutUs.style.right = (screenWidth < 950) ? '0px' : '-40px';
-//     }
-
-//     updateRightPropertyAboutUs();
-//     window.addEventListener('resize', updateRightPropertyAboutUs);
-// }
-
-
 // Function to handle the menu toggle
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
@@ -77,3 +48,82 @@ document.addEventListener("DOMContentLoaded", function () {
         menuToggle.classList.toggle("active");
     });
 });
+
+
+// Function to handle an HTTP request sent to backend by the form on the contacts page and a pop-up message
+document.addEventListener('DOMContentLoaded', function () {
+    async function handleFormSubmission() {
+      // Collect form data
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      console.log('Name:', name);
+      console.log('Email:', email);
+      console.log('Message:', message);
+
+      const formData = {
+        name: name,
+        email: email,
+        message: message,
+      };
+
+      try {
+        // Send form data to the server
+        const response = await fetch('http://localhost:3000/submit-form', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: new URLSearchParams(formData), // Use URLSearchParams to format the data
+        });
+
+        if (response.ok) {
+          // Form submitted successfully, handle the response if needed
+          console.log('Form submitted successfully');
+          myFunction(true, 'Form submitted successfully'); // Display the success message
+        } else {
+          // Handle error response
+          console.error('Error submitting form:', response.status, response.statusText);
+          myFunction(false, 'Error: ' + response.statusText); // Display the error message
+        }
+
+        // Wait for 3 seconds and then reload the page
+        setTimeout(function () {
+          document.getElementById("contact-form").reset();
+          location.reload();
+        }, 3000);
+      } catch (error) {
+        console.error('Error submitting form:', error.message);
+        myFunction(false, 'Error: ' + error.message); // Display the error message
+
+        // Wait for 3 seconds and then reload the page
+        setTimeout(function () {
+          document.getElementById("contact-form").reset();
+          location.reload();
+        }, 3000);
+      }
+
+      // Prevent the default form submission behavior
+      return false;
+    }
+
+    // Toggle the visibility of the popup
+    function myFunction(isSuccess, message) {
+      var popup = document.getElementById("myPopup");
+      var popupMessage = document.getElementById("popupMessage");
+
+      if (isSuccess) {
+        popupMessage.innerHTML = 'Form submitted successfully';
+      } else {
+        popupMessage.innerHTML = message;
+      }
+      popup.classList.toggle("show");
+    }
+
+    // Attach the handleFormSubmission function to the form submission event
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the default form submission
+      handleFormSubmission();
+    });
+  });
