@@ -1,4 +1,4 @@
-# PetShopOne-agency-site--task
+# PetShopOne-agency-site--workshop-task
 
 ## Publicly accessible domain names:<br>
 
